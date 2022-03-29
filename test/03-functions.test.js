@@ -13,11 +13,11 @@ describe('timeConversion(time)', function() {
         expect(timeConversion("12:12:31AM")).toBe("00:12:31")
       });
       it('EXTRA CREDIT: manejar entrada dedatos erronea', function() {
-        expect(timeConversion("35:15:00PM")).toBe(false);
-        expect(timeConversion("12:78:31AM")).toBe(false);
-        expect(timeConversion("12:15:78AM")).toBe(false);
-        expect(timeConversion("")).toBe(false);
-        expect(timeConversion("15:15AM")).toBe(false)
+        expect(timeConversion("35:15:00PM")).toBe(false); //  si     0 y 1 <0 || >23 false
+        expect(timeConversion("12:78:31AM")).toBe(false); //  si (:) 6 y 4 <0 || >59 false
+        expect(timeConversion("12:15:78AM")).toBe(false); //  si (:) 6 y 7 <0 || >59 false
+        expect(timeConversion("")).toBe(false); //            si   length >=0 && <10 false
+        expect(timeConversion("15:15AM")).toBe(false)             // // //
       });  
 });
 
