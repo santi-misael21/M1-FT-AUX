@@ -54,8 +54,6 @@ function Queue() {
     this.len++;
   }
 
-  
-  
   LinkedList.prototype.remove = function() {
     if(!this.head){
       return undefined;

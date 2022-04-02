@@ -1,5 +1,5 @@
 const { Queue } = require("../estructuras")
-// Implementar la función controlAcces: a partir de una Queue que va a recibir como paráemtro que tiene
+// Implementar la función controlAcces: a partir de una Queue que va a recibir como parámetro, la cual tiene
 // en cada posición un objeto que va a representar a una persona y tiene la siguiente forma:
 // {
 //   fullname: "Franco Etcheverri",

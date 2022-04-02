@@ -1,4 +1,3 @@
-
 function invertirOrden(array) {
     // Invertir el orden de los elementos del array que recibe por parametro
     // Que los ultimos elementos, pasen a ser los primeros
@@ -41,7 +40,6 @@ function numeroEnComun(array1, array2) {
     return c
 
 };
-
 
 
 function sumaDeArrays(array) {
